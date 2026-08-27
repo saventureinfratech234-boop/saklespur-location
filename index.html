@@ -1,225 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saventure : Interior Design, Architecture & Digital Marketing...</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="logo.png">
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 <body>
 
-    <!--====================================
-        CONTACT SECTION
-=====================================-->
+<section class="legend-section">
 
-<section class="contact" id="contact">
+    <h2>Blessed By Land &amp; Legend</h2>
 
-    <h2 class="contact-title">Contact Us</h2>
+    <div class="slider">
 
-    <div class="contact-container">
+        <button class="slide-btn prev" onclick="slideLeft()">&#10094;</button>
 
-        <!-- Left Side -->
+        <div class="slide-track" id="slideTrack">
 
- <!-- Left Side - Google Map -->
+            <!-- 1 -->
+            <div class="card">
+                <img src="images/manjunatha.jpg" onclick="openImage(this.src)" alt="">
+                <p><span>📍</span> Sri Manjunatha Swamy Temple - 10 km</p>
+            </div>
 
-<div class="contact-map">
+            <!-- 2 -->
+            <div class="card">
+                <img src="images/netravathi.jpg" onclick="openImage(this.src)" alt="">
+                <p><span>📍</span> Netravathi Dam - 3 km</p>
+            </div>
 
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6829.502913216808!2d75.74186652207456!3d12.731195955489124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba51e4eec90dd1b%3A0xfd79ead8b18f220e!2sKasargali%20Nature%20Stays!5e1!3m2!1sen!2sin!4v1786967695940!5m2!1sen!2sin"
-        width="100%"
-        height="450"
-        style="border:0;"
-        allowfullscreen=""
-        title="location"
-        loading="lazy">
-    </iframe>
+            <!-- 3 -->
+            <div class="card">
+                <img src="images/sringeri.jpg" onclick="openImage(this.src)" alt="">
+                <p><span>📍</span> Sringeri sharadamba - 11 km</p>
+            </div>
 
-</div>
+            <!-- 4 -->
+            <div class="card">
+                <img src="images/kukke.jpg" onclick="openImage(this.src)" alt="">
+                <p><span>📍</span>Sri Kukke Subbramanya Swamy Temple - 13 km</p>
+            </div>
 
-        <!-- Right Side -->
+            <!-- 5 -->
+            <div class="card">
+                <img src="images/ganesha.jpg" onclick="openImage(this.src)" alt="">
+                <p><span>📍</span>Sowthadka Maha Ganapathi - 16 km</p>
+            </div>
 
-<div class="contact-form">
+            <!-- 6 -->
+            <div class="card">
+                <img src="images/rama.jpg" onclick="openImage(this.src)" alt="">
+                <p><span>📍</span> Sree Rama Kshetra - 11.9 km</p>
+            </div>
 
-    <form action="https://api.web3forms.com/submit" method="POST">
-        
+            <!-- 7 -->
+            <div class="card">
+                <img src="images/Bylakuppe.jpg" onclick="openImage(this.src)" alt="">
+                <p><span>📍</span>Bylakuppe - 16 km</p>
+            </div>
 
-        <!-- Web3Forms Access Key -->
-        <input type="hidden" name="access_key" value="adfc09b3-c875-46e3-8719-72ad55268c9a">
+            <!-- 8 -->
+            <div class="card">
+                <img src="images/bisle.jpg" onclick="openImage(this.src)" alt="">
+                <p><span>📍</span>Bisle Ghat - 16 km</p>
+            </div>
 
-        <!-- Optional Subject -->
-        <input type="hidden" name="subject" value="New Farm Resort - Book a Visit Enquiry">
+        </div>
 
-
-        <input
-            type="hidden"
-            name="redirect"
-            value="index.html">
-
-        <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-        >
-
-        <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-        >
-
-        <input
-            type="tel"
-            name="phone"
-            placeholder="Phone Number"
-            required
-        >
-
-        <textarea
-            name="message"
-            rows="6"
-            placeholder="Message"
-            required
-        ></textarea>
-
-        <button type="submit">Book a Visit</button>
-
-    </form>
-
-</div>
+        <button class="slide-btn next" onclick="slideRight()">&#10095;</button>
 
     </div>
 
 </section>
 
 
-<!--==================================
-            FOOTER
-===================================-->
 
-<footer class="footer">
+<!-- Enquire Button -->
+<label for="enquiry-popup" class="enquire-btn">
+    ENQUIRE NOW
+</label>
 
-    <div class="footer-container">
 
-        <!-- Company -->
+<!-- Hidden Checkbox -->
+<input type="checkbox" id="enquiry-popup">
 
-        <div class="footer-box">
+<!-- Background Overlay -->
+<div class="popup-overlay">
 
-            <img src="images/logo.png" class="footer-logo" alt="Saventure Logo">
+    <!-- Popup Box -->
+    <div class="popup-box">
 
-            <p>
-                 Saventure Infra Tech, innovative corporate company creating luxurious, budget-friendly spaces. 
-                 Our highly skilled professionals are committed to delivering exceptional service and innovative solutions that exceed our client’s expectations. 
-                 We focus on quality, reliability, and efficiency to establish meaningful, long-term client relationships.
-            </p>
+        <!-- Close Button -->
+        <label for="enquiry-popup" class="close-btn">&times;</label>
 
-        </div>
+        <h2>Your Saventure Awaits!</h2>
 
-        <!-- Quick Links -->
+<form action="https://formsubmit.co/saventurebiz@gmail.com" method="POST">
 
-        <div class="footer-box">
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
 
-            <h3>Quick Links</h3>
+    <!-- Email Subject -->
+    <input type="hidden"
+           name="_subject"
+           value="New Website Enquiry - Sakleshpur Farm Resort">
 
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#facilities">Facilities</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <!-- Redirect to Thank You Page -->
+    <input type="hidden"
+           name="_next"
+           value="https://saventureinfratech234-boop.github.io/sakleshpur-specifications/thankyou.html">
 
-        </div>
+    <!-- Name -->
+    <input type="text"
+           name="Name"
+           placeholder="Name"
+           required>
 
-        <!-- Facilities -->
+    <!-- Phone -->
+    <input type="tel"
+           name="Phone"
+           placeholder="Phone Number"
+           required>
 
-        <div class="footer-box">
+    <!-- Email -->
+    <input type="email"
+           name="Email"
+           placeholder="Email Address"
+           required>
 
-            <h3>Markets Served</h3>
+    <!-- Message -->
+    <textarea
+        name="message"
+        rows="6"
+        placeholder="Message"
+        required></textarea>
 
-            <ul>
-                <li><a href="https://www.saventurebiz.com/architecture/">Architecture Services</a></li>
-                <li><a href="https://www.saventurebiz.com/constructions/">Construction Services</a></li>
-                <li><a href="https://www.saventurebiz.com/interior-design/">Interior Services</a></li>
-                <li><a href="https://www.saventurebiz.com/digital-marketing/">Digital Marketing</a></li>
-                <li><a href="https://www.saventurebiz.com/coming-soon/">Financial Services</a></li>
-                <li><a href="https://www.saventurebiz.com/infra-services/">Infra Services</a></li>
-                <li><a href="https://www.saventurebiz.com/import-export/">Import & Export Services</a></li>
-                <li><a href="https://www.saventurebiz.com/renovation/">Renovation Services</a></li> 
-            </ul>
+    <!-- Checkbox -->
+    <div class="checkbox-area">
 
-        </div>
+        <input type="checkbox"
+               id="agree"
+               name="agree"
+               required>
 
-        <!-- Contact -->
-
-        <div class="footer-box">
-
-            <h3>Contact</h3>
-
-<p>
-    <i class="fas fa-map-marker-alt"></i>
-    <a href="https://maps.google.com/?q=744,+1st+Floor,+12th+Main+Road,+3rd+Block,+Rajajinagar,+Bengaluru,+560010"
-       target="_blank"
-       rel="noopener noreferrer">
-        #744, 1st Floor, 12th Main Road, 3rd Block, Rajajinagar, Bengaluru – 560010
-    </a>
-</p>
-
-<p>
-    <i class="fas fa-phone"></i>
-    <a href="tel:+916366611333">
-        +91 63666 11333
-    </a>
-</p>
-
-<p>
-    <i class="fas fa-envelope"></i>
-    <a href="mailto:connect@saventurebiz.com">
-        connect@saventurebiz.com
-    </a>
-</p>
-
-<p>
-    <i class="fas fa-globe"></i>
-    <a href="https://www.saventurebiz.com"
-       target="_blank"
-       rel="noopener noreferrer">
-        www.saventurebiz.com
-    </a>
-</p>
-
-            <div class="social-icons">
-                <a href="https://www.facebook.com/people/Saventure-Infra-Tech/100094907114961/"><i class="fab fa-facebook-f" title="name"></i></a>
-                <a href="https://www.instagram.com/saventureinfratechllp/"><i class="fab fa-instagram" title="name"></i></a>
-                <a href="https://www.linkedin.com/in/nandini-savandhi-25877431/"><i class="fab fa-linkedin-in" title="name"></i></a>
-                <a href="https://www.youtube.com/@SaventureBiz"><i class="fab fa-youtube" title="name"></i></a>
-            </div>
-
-        </div>
+        <label for="agree">
+            I AUTHORISE SAVENTURE INFRA TECH LLP AND ITS REPRESENTATIVES
+            TO CONTACT ME THROUGH CALL, SMS, EMAIL OR WHATSAPP.
+        </label>
 
     </div>
 
-    <div class="footer-bottom">
+    <!-- Submit -->
+    <button type="submit">SUBMIT</button>
 
-        © 2026 Sakleshpur Resort Project |
-        Designed by Saventure Infra Tech
+</form>
 
     </div>
 
-</footer>
+</div>
 
-  
 
-    </body>
+
+<!-- Lightbox -->
+
+<div id="popup">
+
+    <span onclick="closeImage()">&times;</span>
+
+    <img id="popupImg" alt="">
+
+</div>
+
+
+
+
+<script>
+
+const track = document.getElementById("slideTrack");
+const cards = document.querySelectorAll(".card");
+
+let currentIndex = 0;
+
+const slideWidth = 150; // Card width + gap
+
+// Number of cards visible at one time
+const visibleCards = 3;
+
+// Maximum position
+const maxIndex = cards.length - visibleCards;
+
+function slideRight() {
+
+    if (currentIndex < maxIndex) {
+        currentIndex++;
+    }
+
+    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
+
+function slideLeft() {
+
+    if (currentIndex > 0) {
+        currentIndex--;
+    }
+
+    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
+
+// Image Popup
+
+function openImage(src) {
+    document.getElementById("popup").style.display = "flex";
+    document.getElementById("popupImg").src = src;
+}
+
+function closeImage() {
+    document.getElementById("popup").style.display = "none";
+}
+
+</script>
+
+</body>
 </html>
