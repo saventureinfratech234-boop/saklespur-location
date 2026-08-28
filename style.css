@@ -42,7 +42,7 @@ body{
     content:"";
     width:80px;
     height:4px;
-    background:#00c6ff;
+    background:#0d2b45;
     display:block;
     margin:15px auto 0;
     border-radius:50px;
@@ -131,7 +131,7 @@ body{
 
 .footer{
 
-    background:linear-gradient(135deg,#041126,#0b2f6d);
+    background:linear-gradient(135deg,#260404,#6d270b);
     color:#ffffff;
     padding:80px 8% 0;
 }
