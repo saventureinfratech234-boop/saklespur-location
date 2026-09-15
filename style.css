@@ -391,14 +391,10 @@ body{
     ===================================================== */
 
     .contact-container {
-
         width: 100%;
-
         display: flex;
         flex-direction: column;
-
         gap: 30px;
-
         align-items: stretch;
     }
 
@@ -408,16 +404,11 @@ body{
     ===================================================== */
 
     .contact-form {
-
         order: 1;
-
         width: 100%;
         max-width: 100%;
-
         padding: 28px 22px;
-
         border-radius: 18px;
-
         box-shadow:
             0 8px 25px rgba(0, 0, 0, 0.10);
     }
